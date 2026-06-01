@@ -2,7 +2,7 @@
   import axios from "axios";
 
   const api = axios.create({
-    baseURL: "https://ai-habit-tracker-6mqf.onrender.com",
+    baseURL: "https://ai-habit-tracker-6mqf.onrender.com/api",
   });
 
   api.interceptors.request.use((config) => {
