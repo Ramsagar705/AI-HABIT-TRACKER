@@ -38,7 +38,12 @@ const corsOptions = {
   allowedHeaders: ["Content-Type", "Authorization"],
 };
 
-app.use(cors(corsOptions));
+app.use(cors({
+
+  
+  origin: "https://ai-habit-tracker-psi.vercel.app",
+  credentials: true
+}));
 //app.options("*", cors(corsOptions));
 
 app.use(express.json({ limit: "1mb" }));
